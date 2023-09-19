@@ -1,0 +1,42 @@
+/* Template.css */
+
+.template-container {
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 16px;
+    margin: 16px;
+    overflow: hidden;
+    background-color: rgb(216, 216, 211);
+    /* Add overflow property */
+}
+
+.template-info {
+    margin-top: 8px;
+    white-space: nowrap;
+    /* Prevent line breaks within the info div */
+    overflow: hidden;
+    /* Add overflow property */
+    text-overflow: ellipsis;
+    /* Add ellipsis for overflow text */
+}
+
+.template-info div {
+    margin-bottom: 8px;
+}
+
+.edit-button {
+    margin-top: 8px;
+    margin-right: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.send-email-button {
+    margin-top: 8px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
