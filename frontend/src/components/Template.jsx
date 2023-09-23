@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Template.css"; // Import your CSS file
 
 const Template = (props) => {
-  const { name, subject, maillist, body } = props.template;
+  const { tname, subject, maillist, body } = props.template;
   const id = props.id;
 
   const sendEmail = async (e) => {
@@ -29,15 +29,16 @@ const Template = (props) => {
 
   return (
     <div className="template-container">
-      <h3>{name}</h3>
+      <h3>{tname}</h3>
       <div className="template-info">
+        {/* <div>Template name:{name}</div> */}
         <div>Subject: {subject}</div>
         <div>Mail List: {maillist}</div>
         <div>Mail Body: {body}</div>
       </div>
-      <button type="button" className="edit-button">
+      {/* <button type="button" className="edit-button">
         Edit template
-      </button>
+      </button> */}
       <button type="button" className="send-email-button" onClick={sendEmail}>
         Send Email
       </button>

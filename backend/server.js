@@ -16,7 +16,7 @@ app.post("/sendmail", async (req, res) => {
     let emailArray = receiverEmail.split(",").map((email) => email.trim());
     for (mail of emailArray) console.log(mail, " ");
     console.log(typeof emailArray);
-    // const emailList = ["nileshpratap03@gmail.com", "rgcricket518@gmail.com"];
+    // const emailList = ["rgcricket518@gmail.com","nileshpratap03@gmail.com"];
 
     // sendmail();
 
@@ -27,7 +27,7 @@ app.post("/sendmail", async (req, res) => {
         pass: process.env.PASSWORD,
       },
     });
-    console.log("hi");
+    // console.log("hi");
     for (email of emailArray) {
       const mailOptions = {
         from: process.env.EMAIL,

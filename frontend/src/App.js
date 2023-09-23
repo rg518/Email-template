@@ -7,7 +7,7 @@ function App() {
     {
       name: "firstMail",
       subject: "Good morning",
-      maillist: "nvp@gmail.com",
+      maillist: "rg@gmail.com",
       body: "how are you?",
     },
   ];

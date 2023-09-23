@@ -38,7 +38,6 @@ const Contact = () => {
         receiverEmail: "",
         subject: "",
         body: "",
-        tname: "",
       });
 
       alert(res.data);
@@ -74,7 +73,7 @@ const Contact = () => {
       receiverEmail: "",
       subject: "",
       body: "",
-      tname: "",
+      // tname: "",
     });
     window.location.reload(false);
   };
@@ -140,13 +139,26 @@ const Contact = () => {
               required
             />
           </div>
-          <button type="submit" className="submit-button">
-            Send Email
-          </button>
-          <br />
-          <button type="button" className="" onClick={handleSave}>
-            Save template
-          </button>
+          <div
+            style={{
+              display: "flex",
+              margin: "5px 0px",
+              justifyContent: "space-between",
+              fontSize: "16px",
+            }}
+          >
+            <button
+              type="submit"
+              className="submit-button"
+              style={{ marginRight: "50px" }}
+            >
+              Send Email
+            </button>
+            <br />
+            <button type="button" className="" onClick={handleSave}>
+              Save template
+            </button>
+          </div>
         </form>
       </div>
     </StyledContactForm>
